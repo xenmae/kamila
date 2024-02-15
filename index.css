@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-color: #000;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--dark-color);
+}
+
+.night {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+      ellipse at top,
+      transparent 0%,
+      var(--dark-color)
+    ),
+    radial-gradient(
+      ellipse at bottom,
+      var(--dark-color),
+      rgba(251, 182, 247, 0.2)
+    ),
+    repeating-linear-gradient(
+      220deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      189deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      148deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    linear-gradient(90deg, rgb(251, 182, 247), rgb(251, 182, 247));
+}
+
+.container {
+  margin: auto;
+}
+
+.text {
+  margin: 3rem;
+}
+.night h1 {
+  margin: 0 1rem 0.6rem 1rem;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(to top, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.list .li-1 {
+  margin-top: 1rem;
+  border: 2px solid white;
+  padding: 0.6rem 1.9rem;
+  border-radius: 10px;
+}
+
+.list .li-2 {
+  margin-top: 1rem;
+  border: 2px solid white;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+}
+
+.list .li-3 {
+  margin-top: 1rem;
+  border: 2px solid white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 10px;
+}
+
+.list li a {
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+  color: white;
+  font-size: 40px;
+}
